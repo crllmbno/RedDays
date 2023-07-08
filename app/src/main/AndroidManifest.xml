@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PeriodCheck"
         tools:targetApi="31">
-
+        <activity
+            android:name=".LastPeriod"
+            android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">

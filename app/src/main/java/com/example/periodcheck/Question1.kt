@@ -1,10 +1,12 @@
 package com.example.periodcheck
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Spinner
 
 class Question1 : AppCompatActivity() {
@@ -28,6 +30,15 @@ class Question1 : AppCompatActivity() {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
         spinner.adapter = adapter
+
+        val editText: EditText = findViewById(R.id.editName)
+
+        val myImageButton = findViewById<ImageButton>(R.id.btnNext1)
+
+        myImageButton.setOnClickListener {
+            val intent = Intent(this, LastPeriod::class.java)
+            startActivity(intent)
+        }
 
     }
 }

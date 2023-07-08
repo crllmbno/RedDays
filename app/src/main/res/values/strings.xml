@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">PeriodCheck</string>
-
-
+    <string name="user_name">What should we call you?</string>
+    <string name="logo">logo</string>
 
 </resources>
