@@ -1,8 +1,8 @@
 package com.example.periodcheck
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.content.Intent
 import android.widget.CalendarView
 import android.widget.ImageButton
 import android.widget.Toast
@@ -13,7 +13,7 @@ import java.util.Locale
 
 
 
-class LastPeriod : AppCompatActivity() {
+class LastPeriod2 : AppCompatActivity() {
 
     private lateinit var calendarView: CalendarView
     private var selectedDate: Long = 0
@@ -35,7 +35,7 @@ class LastPeriod : AppCompatActivity() {
         }
         val myImageButton = findViewById<ImageButton>(R.id.btnNext1)
         myImageButton.setOnClickListener {
-            val intent = Intent(this, LastPeriod2::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }

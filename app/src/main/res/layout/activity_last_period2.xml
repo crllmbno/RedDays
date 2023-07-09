@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.periodcheck.LastPeriod"
+    tools:context=".LastPeriod2"
     android:background="@color/bgColor">
 
     <ImageView
@@ -62,41 +62,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtPeriod">
 
-        <TextView
-            android:id="@+id/txtStart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="15sp"
-            android:fontFamily="@font/interregular"
-            android:text="When did your last period begin?"
-            android:textColor="@color/black"
-            android:textSize="15sp" />
+    <TextView
+        android:id="@+id/txtStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15sp"
+        android:fontFamily="@font/interregular"
+        android:text="When did your last period end?"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
 
-        <CalendarView
-            android:id="@+id/calendarView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="45dp"
-            android:layout_marginBottom="15dp"
-            android:theme="@style/CustomCalendarTheme" />
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="15dp"
+        android:theme="@style/CustomCalendarTheme" />
 
 
-        <ImageButton
-            android:id="@+id/btnNext1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="310dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/mint"
-            android:contentDescription="NextScreen"
-            android:padding="60dp"
-            app:srcCompat="@drawable/next"
-            app:tint="#8A2BE2" />
-
+    <ImageButton
+        android:id="@+id/btnNext1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/mint"
+        android:contentDescription="NextScreen"
+        android:padding="60dp"
+        app:srcCompat="@drawable/next"
+        app:tint="#8A2BE2" />
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

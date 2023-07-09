@@ -7,4 +7,11 @@
 x
     <style name="Theme.PeriodCheck" parent="Theme.Material3.DayNight.NoActionBar">
     </style>
+
+    <style name="CustomCalendarTheme" parent="Theme.MaterialComponents">
+        <item name="colorOnPrimary">@color/Lav</item>
+
+    </style>
+
+
 </resources>
