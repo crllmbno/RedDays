@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Context
 import android.content.Intent
-import android.widget.ImageButton
+import android.widget.Button
 
 
 class Welcome : AppCompatActivity() {
@@ -29,9 +29,9 @@ class Welcome : AppCompatActivity() {
             finish()
         }
 
-        val myImageButton = findViewById<ImageButton>(R.id.btnNext)
+        val myButton = findViewById<Button>(R.id.btnNext1)
 
-        myImageButton.setOnClickListener {
+        myButton.setOnClickListener {
             val intent = Intent(this, Question1::class.java)
             startActivity(intent)
         }
