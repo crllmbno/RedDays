@@ -1,17 +1,25 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.PeriodCheck" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="background">@color/bgColor</item>
     </style>
 x
-    <style name="Theme.PeriodCheck" parent="Theme.Material3.DayNight.NoActionBar">
+
+    <style name="BottomNavTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/Lav</item>
+        <item name="colorPrimaryVariant">#4D2575</item>
     </style>
+
 
     <style name="CustomCalendarTheme" parent="Theme.MaterialComponents">
         <item name="colorOnPrimary">@color/Lav</item>
 
     </style>
+
+    <style name="Theme.SplashScreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/Lav</item>
+    </style>
+
 
 
 </resources>

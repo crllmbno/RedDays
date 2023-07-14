@@ -3,26 +3,44 @@ package com.example.periodcheck
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import com.example.periodcheck.databinding.ActivityMainBinding
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var dateTextView: TextView
+
+    private lateinit var binding : ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        replaceFragment(Homee())
 
-        dateTextView = findViewById(R.id.date)
+        binding.bottomNavigationView.setOnItemReselectedListener {
 
-        val currentDate = getCurrentDate()
-        dateTextView.text = currentDate
+            when(it.itemId){
+                R.id.Home -> replaceFragment(Homee())
+                R.id.calendar -> replaceFragment(Calendar())
+                R.id.faq -> replaceFragment(FAQ())
+
+
+                else -> {
+
+
+                }
+            }
+            true
+        }
     }
 
-    private fun getCurrentDate(): String {
-        val calendar = Calendar.getInstance()
-        val dateFormat = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault())
-        return dateFormat.format(calendar.time)
+    private fun replaceFragment(fragment: Fragment){
+
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frameLayout,fragment)
+        fragmentTransaction.commit()
     }
 }

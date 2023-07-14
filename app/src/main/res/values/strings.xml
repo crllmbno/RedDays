@@ -2,5 +2,8 @@
     <string name="app_name">PeriodCheck</string>
     <string name="user_name">What should we call you?</string>
     <string name="logo">logo</string>
+    <string name="when_did_your_last_period_end">When did your last period end?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

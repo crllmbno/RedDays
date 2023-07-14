@@ -4,95 +4,105 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LastPeriod2"
+    tools:context="com.example.periodcheck.LastPeriod"
     android:background="@color/bgColor">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="45dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="61dp"
-        android:src="@drawable/logo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/logo"/>
-
-    <TextView
-        android:id="@+id/txtAppName"
-        android:layout_width="72dp"
-        android:layout_height="16dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="28dp"
-        android:fontFamily="@font/jostbold"
-        android:text="PeriodCheck"
-        android:textAlignment="center"
-        android:textColor="@color/Mint"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <TextView
-        android:id="@+id/txtPeriod"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/italianaregular"
-        android:text="Your Period,"
-        android:textColor="@color/black"
-        android:textSize="35sp"
-        app:layout_constraintBottom_toTopOf="@+id/shape1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAppName"
-        app:layout_constraintVertical_bias="0.249" />
-
     <LinearLayout
-
-        android:id="@+id/shape1"
-        android:layout_width="378dp"
-        android:layout_height="529dp"
-        android:background="@drawable/laven"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtPeriod"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent">
-
-    <TextView
-        android:id="@+id/txtEnd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="15sp"
-        android:fontFamily="@font/interregular"
-        android:text="When did your last period end?"
-        android:textColor="@color/black"
-        android:textSize="15sp" />
-
-    <CalendarView
-        android:id="@+id/calendarView"
+        android:id="@+id/layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="45dp"
-        android:layout_marginBottom="15dp"
-        android:theme="@style/CustomCalendarTheme" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:id="@+id/applogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.5">
 
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="45dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/logo"
+                android:contentDescription="@string/logo"/>
+
+            <TextView
+                android:id="@+id/txtAppName"
+                android:layout_width="72dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/jostbold"
+                android:text="PeriodCheck"
+                android:textAlignment="center"
+                android:textColor="@color/Mint"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/italianaregular"
+            android:text="Your Period,"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+
+            android:id="@+id/shape1"
+            android:layout_width="378dp"
+            android:layout_height="427dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@drawable/laven"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtPeriod">
+
+            <TextView
+                android:id="@+id/txtEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:fontFamily="@font/interregular"
+                android:text="@string/when_did_your_last_period_end"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="366dp"
+                android:layout_height="299dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="15dp"
+                android:theme="@style/CustomCalendarTheme" />
+
+        </LinearLayout>
         <Button
             android:id="@+id/btnNext1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="275dp"
             android:background="@android:color/transparent"
+            android:fontFamily="@font/intertight_italic"
             android:text="Next >"
             android:textSize="15sp"
-            android:fontFamily="@font/intertight_italic"
-            android:layout_marginLeft="250dp"/>
+            android:textColor="@color/Lav"
+            android:layout_weight="0.5"
+            android:layout_marginBottom="30dp" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
