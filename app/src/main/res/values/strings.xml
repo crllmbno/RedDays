@@ -5,5 +5,6 @@
     <string name="when_did_your_last_period_end">When did your last period end?</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="angry">Angry</string>
 
 </resources>

@@ -56,13 +56,13 @@
 
         <LinearLayout
             android:id="@+id/shape1"
-            android:layout_width="266dp"
-            android:layout_height="249dp"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/dash"
-            android:orientation="vertical"
+            android:layout_width="289dp"
+            android:layout_height="214dp"
             android:layout_gravity="center"
-            android:layout_weight="1">
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/dash"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/periodIn"
@@ -73,6 +73,7 @@
                 android:layout_weight="0.5"
                 android:fontFamily="@font/interlight"
                 android:text="Period in"
+                android:textColor="#A85D5D"
                 android:textSize="15sp" />
 
             <TextView
@@ -84,7 +85,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/interblack"
                 android:text="2 Days"
-                android:textSize="35sp" />
+                android:textSize="35sp"/>
 
 
             <TextView
@@ -106,7 +107,8 @@
                 android:layout_weight="0.5"
                 android:fontFamily="@font/interregular"
                 android:text="Log period"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                android:textColor="#9BF0EB"/>
 
 
         </LinearLayout>
@@ -136,7 +138,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/interregular"
-                android:text="add what you feel today"
+                android:text="Add what you feel today"
                 android:textAlignment="center"
                 android:textSize="10sp"
                 android:layout_weight="1"/>
