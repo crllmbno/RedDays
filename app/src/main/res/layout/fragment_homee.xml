@@ -108,12 +108,13 @@
                 android:fontFamily="@font/interregular"
                 android:text="Log period"
                 android:textSize="12sp"
-                android:textColor="#9BF0EB"/>
+                android:textColor="@color/white"/>
 
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/layoutClick"
             android:layout_width="103dp"
             android:layout_height="95dp"
             android:layout_marginStart="30dp"
@@ -121,7 +122,9 @@
             android:layout_weight="0.4"
             android:background="@drawable/linear"
             android:orientation="vertical"
-            android:layout_marginBottom="60dp">
+            android:layout_marginBottom="60dp"
+            android:clickable="true"
+            android:onClick="onLinearLayoutClicked">
 
             <ImageView
                 android:layout_width="56dp"

@@ -13,6 +13,7 @@ x
 
     <style name="CustomCalendarTheme" parent="Theme.MaterialComponents">
         <item name="colorOnPrimary">@color/Lav</item>
+        <item name="android:textSize">100sp</item>
 
     </style>
 

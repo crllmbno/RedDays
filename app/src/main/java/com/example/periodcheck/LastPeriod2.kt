@@ -20,7 +20,7 @@ class LastPeriod2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_last_period)
+        setContentView(R.layout.activity_last_period2)
 
         calendarView = findViewById(R.id.calendarView)
 
