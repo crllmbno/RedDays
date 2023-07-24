@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "442786829038",
+    "project_id": "periodcheck-e1ac7",
+    "storage_bucket": "periodcheck-e1ac7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442786829038:android:5fecc384d897f717dcd9ff",
+        "android_client_info": {
+          "package_name": "com.example.periodcheck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442786829038-7sjd4jb8d7ligfc6ng74bt0kq99j1t7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKBPy30cihM4sBeGe3MYBjaQiStyW4E9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442786829038-7sjd4jb8d7ligfc6ng74bt0kq99j1t7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
