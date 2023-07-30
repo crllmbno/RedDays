@@ -94,15 +94,15 @@
             android:id="@+id/btnNext1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="30dp"
-            android:layout_marginStart="275dp"
             android:background="@android:color/transparent"
             android:fontFamily="@font/intertight_italic"
             android:text="Next >"
             android:textSize="15sp"
             android:textColor="@color/Lav"
             android:layout_weight="0.5"
-            android:layout_marginBottom="30dp" />
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="12dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 
