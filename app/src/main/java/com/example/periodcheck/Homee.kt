@@ -33,22 +33,14 @@ class Homee : Fragment() {
         _binding = FragmentHomeeBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        binding.date.text = getCurrentDate()
-
         return view
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
-    }
+    }}
 
-    private fun getCurrentDate(): String {
-        val calendar = Calendar.getInstance()
-        val dateFormat = SimpleDateFormat("dd MMMM yyyy", Locale.getDefault())
-        return dateFormat.format(calendar.time)
-    }
-}
 
 
 

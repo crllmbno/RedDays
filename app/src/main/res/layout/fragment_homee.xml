@@ -5,7 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".Homee"
     android:background="@color/bgColor">
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
@@ -41,23 +43,12 @@
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
-            android:fontFamily="@font/interblack"
-            android:text="July"
-            android:textColor="@color/Lav"
-            android:textSize="25sp"
-            android:layout_marginLeft="30dp"
-            android:layout_weight="0.5"
-            android:layout_marginBottom="60dp"/>
+
 
         <LinearLayout
             android:id="@+id/shape1"
-            android:layout_width="289dp"
-            android:layout_height="214dp"
+            android:layout_width="290dp"
+            android:layout_height="290dp"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
             android:layout_weight="1"
@@ -112,45 +103,92 @@
                 android:textSize="12sp"
                 android:textColor="@color/white"/>
 
-
         </LinearLayout>
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="318dp"
+        android:layout_weight="1"
+        android:background="@drawable/mint_bg"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp">
 
-        <LinearLayout
-            android:id="@+id/layoutClick"
-            android:layout_width="103dp"
-            android:layout_height="95dp"
+        <TextView
+            android:id="@+id/dailyInsights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="15dp"
-            android:layout_weight="0.4"
-            android:background="@drawable/linear"
-            android:orientation="vertical"
-            android:layout_marginBottom="60dp"
-            android:clickable="true"
-            android:onClick="onLinearLayoutClicked">
+            android:fontFamily="@font/jostbold"
+            android:text="Daily insights"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
 
-            <ImageView
-                android:layout_width="56dp"
-                android:layout_height="56dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:src="@drawable/plus"
-                android:contentDescription="Add what you feel"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
 
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/linear"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/add"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/interregular"
-                android:text="Add what you feel today"
-                android:textAlignment="center"
-                android:textSize="10sp"
-                android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/cycleDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/interregular"
+                    android:text="26th"
+                    android:textSize="40sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/cycleDay2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/interregular"
+                    android:text="Cycle day"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/linear"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img" />
+
+                <TextView
+                    android:id="@+id/ovulation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/interregular"
+                    android:text="Ovulation in 12 days"
+                    android:textAlignment="center"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
+    </LinearLayout>
 
-
+</ScrollView>
 
 </FrameLayout>

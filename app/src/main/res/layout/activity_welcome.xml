@@ -7,61 +7,58 @@
     tools:context=".Welcome"
     android:background="@color/bgColor">
 
-    <ImageView
-        android:id="@+id/imgwc"
-        android:layout_width="425dp"
-        android:layout_height="524dp"
-        android:src="@drawable/imgwc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtTake"
-        android:layout_width="271dp"
-        android:layout_height="87dp"
-        android:fontFamily="@font/jostbold"
-        android:text="Take Control of Your Cycle"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgwc"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/txtStay"
-        android:layout_width="311dp"
-        android:layout_height="52dp"
-        android:fontFamily="@font/interlight"
-        android:text="Stay in tune with your body and effortlessly track your menstrual cycle."
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtTake"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/btnNext1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/transparent"
-        android:text="Next >"
-        android:textSize="15sp"
-        android:fontFamily="@font/intertight_italic"
-        android:layout_marginLeft="250dp"
-        android:textColor="@color/Lav"
-        android:padding="40dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtStay"
-        android:layout_marginBottom="13dp"
-         />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgwc"
+            android:layout_width="wrap_content"
+            android:layout_height="430dp"
+            android:src="@drawable/imgwc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTake"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/jostbold"
+            android:text="Take Control of Your Cycle"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/txtStay"
+            android:layout_width="311dp"
+            android:layout_height="52dp"
+            android:fontFamily="@font/interlight"
+            android:text="Stay in tune with your body and effortlessly track your menstrual cycle."
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/btnNext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/intertight_italic"
+            android:text="Next >"
+            android:textSize="15sp"
+            android:textColor="@color/Lav"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="12dp"
+            android:padding="30dp"/>
 
 
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
