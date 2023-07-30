@@ -76,7 +76,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/interblack"
                 android:text="2 Days"
-                android:textSize="35sp"
+                android:textSize="45sp"
                 android:textColor="@color/black"/>
 
 
@@ -89,19 +89,9 @@
                 android:fontFamily="@font/interlight"
                 android:text="Low chance of getting pregnant"
                 android:textSize="15sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:layout_marginBottom="40dp"/>
 
-            <Button
-                android:id="@+id/log"
-                android:layout_width="125dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="15dp"
-                android:layout_weight="0.5"
-                android:fontFamily="@font/interregular"
-                android:text="Log period"
-                android:textSize="12sp"
-                android:textColor="@color/white"/>
 
         </LinearLayout>
          <LinearLayout
