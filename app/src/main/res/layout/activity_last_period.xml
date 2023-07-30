@@ -51,7 +51,7 @@
         android:textColor="@color/black"
         android:textSize="35sp"
         android:layout_marginStart="30dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
 
         <LinearLayout
 

@@ -85,7 +85,8 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/interblack"
                 android:text="2 Days"
-                android:textSize="35sp"/>
+                android:textSize="35sp"
+                android:textColor="@color/black"/>
 
 
             <TextView
@@ -96,7 +97,8 @@
                 android:layout_weight="0.5"
                 android:fontFamily="@font/interlight"
                 android:text="Low chance of getting pregnant"
-                android:textSize="15sp" />
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
 
             <Button
                 android:id="@+id/log"

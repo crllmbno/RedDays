@@ -40,7 +40,8 @@
             android:layout_height="50dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="15dp"
-            android:hint="Enter your name" />
+            android:hint="Enter your name"
+            android:outlineAmbientShadowColor="@color/black"/>
 
         <TextView
             android:id="@+id/txtAge"
@@ -64,21 +65,24 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/Lav"
-                android:text="Under 20" />
+                android:text=" Under 20"
+                android:textColor="@color/black"/>
 
             <RadioButton
                 android:id="@+id/radioButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/Lav"
-                android:text="Between 20 to 40" />
+                android:text="20 - 40"
+                android:textColor="@color/black"/>
 
             <RadioButton
                 android:id="@+id/radioButton3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:buttonTint="@color/Lav"
-                android:text="Above 40" />
+                android:text="Above 40"
+                android:textColor="@color/black"/>
         </RadioGroup>
 
         <TextView
